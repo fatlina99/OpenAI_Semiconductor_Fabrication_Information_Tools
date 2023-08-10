@@ -32,10 +32,11 @@ This Python script is designed to facilitate answering questions related to semi
  3. Define Allowed Keywords: The `allowed_keywords` list contains various keywords associated with semiconductor fabrication.
 
  4. `input_tool` Function: This function processes user input. If the input contains `allowed_keywords`, it sends a request to the OpenAI API for generating responses.
-  - The model used is `gpt-3.5-turbo`.
-  - The response includes a system prompt, user inputs, and requests for explanations and examples.
-  - Response length is controlled using `max_tokens`, and response randomness is controlled using `temperature`.
-Call the Function: The `input_tool` function is called twice to demonstrate its functionality with both semiconductor fabrication-related input and unrelated input.
+   - The model used is `gpt-3.5-turbo`.
+   - The response includes a system prompt, user inputs, and requests for explanations and examples.
+   - Response length is controlled using `max_tokens`, and response randomness is controlled using `temperature`.
+
+ 5. Call the Function: The `input_tool` function is called twice to demonstrate its functionality with both semiconductor fabrication-related input and unrelated input.
 
 To use this tool, ensure you have the required libraries installed (`openai`, `dotenv`) and set up your OpenAI API key as an environment variable. You can customize the `allowed keywords` according to your needs.
 
