@@ -52,7 +52,7 @@ def input_tool(msg):
     st.write(tools_output)
     
     # Display the explanation in the terminal
-    print("\nExplantion:")
+    
     print(tools_output)
 
 # Streamlit UI
@@ -64,4 +64,5 @@ user_question = st.text_area("Enter your question or topic related to semiconduc
 # Button to trigger the tool
 if st.button("Get Explanation"):
     input_tool(user_question)
+    print("\nExplantion:")
 #%%
