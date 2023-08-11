@@ -64,5 +64,16 @@ user_question = st.text_area("Enter your question or topic related to semiconduc
 # Button to trigger the tool
 if st.button("Get Explanation"):
     input_tool(user_question)
+    st.subheader("Troubleshooting:")
+    st.write("If you encounter any issues with tool, you can try the following troubleshooting steps:")
+
+    troubleshooting_solution = "Solution: Restart the tool.\n" \
+                                "Details: The tool may have encountered a temporary glitch. Restating can clear the error.\n\n" \
+                                "Step by step instruction:\n" \
+                                "1. Close the tool.\n" \
+                                "2. Wait for 10 seconds.\n" \
+                                "3. Open the tool again."
+  
+    st.write(troubleshooting_solution)   
     print("\nExplantion:")
 #%%
